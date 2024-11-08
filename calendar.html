@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100-Day Calendar</title>
+  <style>
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .day-header {
+      font-weight: bold;
+      text-align: center;
+    }
+    .day {
+      padding: 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>100-Day Calendar</h1>
+  <div class="calendar">
+    <!-- Header -->
+     
+    <div class="day-header">Mon</div>
+    <div class="day-header">Tue</div>
+    <div class="day-header">Wed</div>
+    <div class="day-header">Thu</div>
+    <div class="day-header">Fri</div>
+    <div class="day-header">Sat</div>
+
+    <!-- Days -->
+    <script>
+      for (let day = 1; day <= 100; day++) {
+        document.write(`<div class="day">${day}</div>`);
+      }
+    </script>
+  </div>
+</body>
+</html>
