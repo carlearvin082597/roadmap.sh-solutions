@@ -1,20 +1,124 @@
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --accent-color: #007acc;
+  --dark-bg-color: #333;
+  --dark-text-color: #f5f5f5;
+  --font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--accent-color);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: var(--accent-color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  flex: 1 1 calc(50% - 20px); /* Each box takes up half the width with space in between */
+  padding: 20px;
+  border: 1px solid var(--text-color);
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
   }
-  
-  nav {
-    flex-grow: 1;
+
+  .box {
+      flex: 1 1 100%;
   }
-  
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: var(--dark-bg-color);
+      color: var(--dark-text-color);
+  }
+
+  header, footer {
+      background-color: var(--dark-bg-color);
+      color: var(--dark-text-color);
+  }
+
+  .box {
+      background-color: #444;
+      border-color: #888;
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: var(--dark-bg-color);
+      color: var(--dark-text-color);
+  }
+
+  header, footer {
+      background-color: var(--dark-bg-color);
+      color: var(--dark-text-color);
+  }
+}
+
+@media (max-width: 768px) {
+  header, main {
+      padding: 10px;
+  }
+
   nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .logo img {
-    border-radius: 8px;
-  }
+}
+

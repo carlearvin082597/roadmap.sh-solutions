@@ -1,97 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A simple HTML-only website">
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="A simple HTML-only website for roadmap.sh frontend" />
+    <meta name="description" content="Frontend Developer Portfolio">
+    <meta property="og:title" content="Frontend Developer Portfolio">
+    <meta property="og:description" content="HTML, CSS, JavaScript projects and work experience">
+    <meta property="og:type" content="website">
+    <meta name="description" content="A simple Personal Portfolio for roadmap.sh frontend" />
     <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh" />
     <meta name="author" content="Carl Earvin B. Nonacido" />
-    <title>Basic HTML Website</title>
+    <link rel="icon" href="https://res.cloudinary.com/dlf5vhtov/image/upload/c_crop,g_auto,h_800,w_800/l9drubhay6au1cbctfyg.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+    <title>Personal Portfolio</title>
+</head>
+<body>
     <header>
-      <div class="logo">
-        <a href="https://res.cloudinary.com/dlf5vhtov/image/upload/c_crop,g_auto,h_800,w_800/l9drubhay6au1cbctfyg.jpg" target="_blank"><img width="64" src="/image/logo.png" alt="Logo" /></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <div class="logo">
+            <a href="https://res.cloudinary.com/dlf5vhtov/image/upload/c_crop,g_auto,h_800,w_800/l9drubhay6au1cbctfyg.jpg" target="_blank"><img width="64" src="/image/logo.png" alt="Logo" loading="lazy"/></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-      <section class="intro">
-        <h1>Software Engineer</h1>
-        <p>
-          I build things for the web.
-        </p>
-      </section>
-
-      <section class="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>Survey Form</li>
-          <li>Tribute Page</li>
-          <li>Technical Documentation Page</li>
-          <li>Product Landing Page</li>
-          <li>Personal Portfolio Webpage</li>
-        </ul>
-      </section>
-
-      <section class="work-experience">
-        <h2>Work Experience and Certification</h2>
-        <article>
-          <h3>roadmap.sh</h3>
-          <p>Solved all the frontend projects</p>
-          <a href="projects.html">Visit my Profile</a>
-          <h3>freecodecamp.org</h3>
-          <p>Responsive Web Design Certification</p>
-        </article>
-        <article>
-          <h3>OpenSource Work</h3>
-          <p>Contributed to 50 open-source projects. Made my own projects with 200 GitHub Stars.</p>
-          <a href="https://github.com/carlearvin082597">Visit my GitHub Profile</a>
-        </article>
-      </section>
-
-      <section class="education">
-        <h2>Education</h2>
-        <p>
-          Graduate in Automotive Technology with foundational studies and skills in mechanics and diagnostics. Currently expanding into Information Technology, with a focus on applying technical problem-solving and analytical skills to the IT industry.
-        </p>
-        <ul>
-          <li>Responsive Web Design</li>
-          <li>JavaScript Algorithms and Data Structures</li>
-        </ul>
-      </section>
-
-      <aside class="reviews">
-        <h2>Feedback from Peers</h2>
-        <blockquote>
-          <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-          <footer>Jane Doe, Assistant Professor</footer>
-        </blockquote>
-        <blockquote>
-          <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-          <footer>Jane Doe, Assistant Professor</footer>
-        </blockquote>
-        <blockquote>
-          <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-          <footer>Jane Doe, Assistant Professor</footer>
-        </blockquote>
-      </aside>
+    <main class="container">
+        <section id="about" class="box">
+            <h1>Frontend Developer</h1>
+            <p>HTML only with proper layout, no styling</p>
+        </section>
+    
+        <section id="projects" class="box">
+            <h2>Projects</h2>
+            <ul>
+                <li>HTML Only Portfolio</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+                <li>Countdown Timer</li>
+                <li>Product Upcoming Page</li>
+            </ul>
+        </section>
+    
+        <section id="experience" class="box">
+            <h2>Work Experience</h2>
+            <p>Contributed to open-source projects, made my own projects with GitHub stars. <a href="#">Visit my GitHub Profile</a></p>
+        </section>
+    
+        <section id="education" class="box">
+            <h2>Education</h2>
+            <p>Graduated with 3.7/4 GPA. Courses: OOP, Data Structures, Web Engineering, etc.</p>
+        </section>
+    
+        <section id="reviews" class="box">
+            <h2>Reviews from Teachers</h2>
+            <p>John Doe was a brilliant student; always stood out with assignments. - Jane Doe, Assistant Professor</p>
+        </section>
     </main>
-
+    
     <footer>
-      <p>&copy; all rights reserved 2024</p>
+        <p>&copy; All rights reserved 2025</p>
     </footer>
-
-  </body>
+</body>
 </html>
+
