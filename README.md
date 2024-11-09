@@ -20,8 +20,3 @@ This repository contains front-end projects built following the roadmap.sh front
   <img src="image/portfolio.png" alt="Personal Portfolio" width="300"/> </a>
 <a href="/04-changelog-component">
   <img src="image/change_log.png" alt="Changelog Component" width="300"/> </a>
-<<<<<<< HEAD
-</p>
-=======
-</p>
->>>>>>> 63889b376a3449fddfaac85e11aa97abeaead43a
