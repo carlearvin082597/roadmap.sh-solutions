@@ -107,6 +107,7 @@ body {
     padding: 5px;
     position: relative;
     cursor: pointer;
+    animation: to-top 1s forwards;
 }
 
 .month-picker {
@@ -177,6 +178,13 @@ body {
 .dark .dark-mode-switch .dark-mode-switch-ident {
     top: 2px;
     left: calc(2px + 50%);
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    color: var(--color-text);
 }
 
 .calendar-days div span {
@@ -262,18 +270,19 @@ body {
     background-color: var(--bg-main);
     color: var(--color-text);
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-    transform: scale(1.5);
+    transform: scale(1.2);
     visibility: hidden;
     pointer-events: none; 
-    transition: all 0.2s ease-in-out;
+    
 }
 
 .month-list.show {
     transform: scale(1);
     visibility: visible;
     pointer-events: visible;
+    transition: all 0.2s ease-in-out;
 }
 
 .month-list > div > div {
