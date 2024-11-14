@@ -9,6 +9,7 @@ This repository contains front-end projects built following the roadmap.sh front
 [Personal Portfolio](https://roadmap.sh/projects/portfolio-website), 
 [Changelog component](https://roadmap.sh/projects/changelog-component),
 [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards),
+[Datepicker UI](https://roadmap.sh/projects/datepicker-ui),
 
 <p align="left">
 <a href="/01-single-page-cv/">
@@ -24,5 +25,8 @@ This repository contains front-end projects built following the roadmap.sh front
 </p>
 <p align="left">
 <a href="/05-testimonial-cards/">
-  <img src="image/testemonial.png" alt="Changelog Component" width="300"/> </a>
+  <img src="image/testemonial.png" alt="Testimonial Cards" width="300"/> </a>
+<a href="/06-datepicker-ui/">
+  <img src="image/datepicker_ui.png" alt="Datepicker UI" width="300" />
+</a>
   </p>
