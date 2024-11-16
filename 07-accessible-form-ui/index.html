@@ -4,32 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="results.html" method="get">
+<main>
+<div class="accForm">
+<div class="form-box">
+    <form action="results.html" method="get" enctype="multipart/form-data">
         <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Carl"><br>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" placeholder="Carl" required><br>
         </div>
         <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="noy@gmail.com"><br>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" placeholder="25" min="18" required><br>
         </div>
         <div>
-            <label for="password">
-                Password            
-                <input type="password" name="password"><br>
-            </label>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" placeholder="noy@gmail.com" required><br>
         </div>
         <div>
-            <label for="confirmPassword">
-                Confirm Password    
-                <input type="password" name="confirmPassword"><br>
-            </label>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" aria-required="true" aria-describedby="password-visibility">
+            <button type="button" id="toggle-password" aria-label="Show password" aria-pressed="false" onclick="togglePassword('password')">
+              👁️
+            </button>  
         </div>
-        <div><button type="submit">Submit</button>
-             <button type="reset">Reset</button>
+        <div>
+            <label for="confirm-password">Confirm Password</label><br>
+            <input type="password" id="confirm-password" aria-required="true" aria-describedby="password-visibility">
+            <button type="button" id="toggle-confirm-password" aria-label="Show password" aria-pressed="false" onclick="togglePassword('confirm-password')">👁️</button>  
+        </div>
+        <div>
+            <button type="submit" id="profileBtn">Update Profile</button>
         </div>
     </form>
+</div>
+</div>
+<div id="profile-completeness">
+   <div id="container-wrap">69%</div>
+   <h3>Profile Completeness</h3>
+   <ul>
+    <li><s>Create Account</s></li>
+    <li><s>Update Roadmap Progress</s></li>
+    <li><s>Setup Public Profile</s></li>
+    <li>Complete your first project</li>
+    <li>Invite</li>
+    </ul>
+</div>
+</main>
+<script type="text/javascript">
+    function togglePassword(id) {
+    const passwordInput = document.getElementById(id);
+    const type = passwordInput.type === 'password' ? 'text' : 'password';
+    passwordInput.type = type;
+  }
+</script>
 </body>
 </html>
