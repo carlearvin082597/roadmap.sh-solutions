@@ -1,1 +1,53 @@
-
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Grid container */
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Grid items */
+  .grid-item {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+  }
+  
+  /* Responsive grid layout */
+  @media (min-width: 320px) and (max-width: 599px) {
+    /* Single-column layout for small screens */
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 899px) {
+    /* Two-column layout for medium screens */
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 900px) {
+    /* Three-column layout for large screens */
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
