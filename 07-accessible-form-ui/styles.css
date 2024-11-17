@@ -23,7 +23,8 @@ main {
     flex-direction: row;
     align-items: center;
     background-color: aliceblue;
-    border: 2px solid hsl(0, 17%, 94%);
+    border: 2px solid #000000;
+    border-radius: 20px;
     padding: 1em;   
 }
 
@@ -32,7 +33,6 @@ label, input, button {
 }
 input {
     padding: 10px;
-    border: none;
     border-radius: 5px;
     font-size: 1em;
     margin-bottom: 20px;
@@ -66,7 +66,8 @@ ul {
     background-color: antiquewhite;
     list-style-type: none;
     margin: 5px;
-    padding: 20px 20px 60px 20px;
+    padding: 20px 20px 90px 20px;
+    border-radius: 15px;
 }
 
 #container-wrap {
@@ -74,9 +75,11 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 60px 70px 60px 70px; 
     border: 2px solid hsl(0, 1%, 21%);
+    box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 90%;
     width: 80px;
     margin-right: 20px;
 }
+

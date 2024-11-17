@@ -32,7 +32,7 @@ This repository contains front-end projects built following the roadmap.sh front
 </a>
 </p>
 <p align="left">
-  <a>
-    <img />
+  <a href="/07-accessible-form-ui/">
+    <img src="image/accForm.png" alt="Accessible Form UI" width="300"/>
   </a>
 </p>
