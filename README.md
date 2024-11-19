@@ -37,6 +37,6 @@ This repository contains front-end projects built following the roadmap.sh front
     <img src="image/accForm.png" alt="Accessible Form UI" width="300"/>
   </a>
   <a href="/08-image-grid-layout/">
-    <img src="image/image-grid-layout.png" alt="Accessible Form UI" width="300"/>
+    <img src="resources/image-grid-layout.png" alt="Image Grid Layout" width="300"/>
   </a>
 </p>
