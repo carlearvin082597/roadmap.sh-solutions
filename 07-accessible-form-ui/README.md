@@ -1,4 +1,5 @@
 # Accessible Form UI
 
+## An accessible and well-structured forms using HTML and CSS
 
-    <img src="image/accForm.png" alt="Accessible Form UI" />
+![Datepicker UI](./accForm.png)

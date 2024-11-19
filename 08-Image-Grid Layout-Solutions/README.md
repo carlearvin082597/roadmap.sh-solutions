@@ -1,3 +1,5 @@
 # IMAGE GRID LAYOUT
 
-<img src="resources/image-grid-layout.png" alt="Image Grid Laout" />
+## A simple image collage with responsive grid layout
+
+![Datepicker UI](./image-grid-layout.png)
