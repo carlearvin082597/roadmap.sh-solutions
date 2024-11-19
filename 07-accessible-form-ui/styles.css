@@ -37,6 +37,15 @@ input {
     font-size: 1em;
     margin-bottom: 20px;
 }
+
+input:user-valid {
+    color: green;
+}
+
+input:user-invalid {
+    color: red;
+}
+
 button {
     cursor: pointer;
 }
