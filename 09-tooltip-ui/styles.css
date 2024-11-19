@@ -12,6 +12,22 @@ body {
     justify-content: center;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+div .nav {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+
+
 #tooltip {
     position: relative;
     cursor: pointer;
@@ -22,7 +38,23 @@ body {
     font-family: sans-serif;
 }
 
-#tooltipText {
+.tooltip-text {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    visibility: hidden;
+}
+
+
+#home, #project, #contact {
     position: absolute;
     left: 50%;
     top: 0;
@@ -36,19 +68,24 @@ body {
     transition: opacity 0.5s ease;
 }
 
-#tooltipText::before {
+#home::before, #project::before, #contact::before {
     content: "";
     position: absolute;
     left: 50%;
     top: 100%;
-    transform: translateX(-50px);
-    border: 15px solid;
-    border-color: #000 #0000 #0000 #0000;
+    transform: translateX(-50%); /* Fix: Align the arrow to the center */
+    border: 10px solid transparent;
+    border-top-color: #000; /* Create a triangle for the arrow */
     visibility: hidden;
 }
 
-#tooltip:hover #tooltipText {
-    top: -130%;
+.tooltip:hover .tooltip-text {
+    top: -130%; /* Moves the tooltip upwards */
     visibility: visible;
     opacity: 1;
+}
+
+.nav span:hover {
+    color: #555; /* Highlight text on hover */
+    cursor: pointer;
 }
