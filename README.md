@@ -10,7 +10,8 @@ This repository contains front-end projects built following the roadmap.sh front
 [Changelog component](https://roadmap.sh/projects/changelog-component),
 [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards),
 [Datepicker UI](https://roadmap.sh/projects/datepicker-ui),
-[Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
+[Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui),
+[Image Grid Layout](https://roadmap.sh/projects/image-grid)
 
 <p align="left">
 <a href="/01-single-page-cv/">
@@ -34,5 +35,8 @@ This repository contains front-end projects built following the roadmap.sh front
 <p align="left">
   <a href="/07-accessible-form-ui/">
     <img src="image/accForm.png" alt="Accessible Form UI" width="300"/>
+  </a>
+  <a href="/08-image-grid-layout/">
+    <img src="image/image-grid-layout.png" alt="Accessible Form UI" width="300"/>
   </a>
 </p>
