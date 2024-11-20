@@ -1,18 +1,18 @@
 function openTab(evt, tabName) {
-    // Get all elements with class="tab-content" and hide them
-    var tabContent = document.querySelectorAll('.tab-content');
+    // Hide all tab contents
+    const tabContent = document.querySelectorAll('.tab-content');
     tabContent.forEach(content => content.style.display = 'none');
-  
-    // Get all elements with class="tab-link" and remove the class "active"
-    var tabLinks = document.querySelectorAll('.tab-link');
+
+    // Remove active class from all tabs
+    const tabLinks = document.querySelectorAll('.tab-link');
     tabLinks.forEach(link => link.classList.remove('active'));
-  
-    // Show the current tab, and add an "active" class to the clicked tab
+
+    // Show the selected tab and add active class
     document.getElementById(tabName).style.display = 'block';
     evt.currentTarget.classList.add('active');
-  }
-  
-  // Show the first tab by default
-  document.addEventListener('DOMContentLoaded', function() {
+}
+
+// Show the first tab by default on page load
+document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.tab-content').style.display = 'block';
-  });
+});

@@ -3,54 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabs</title>
+    <title>Upgraded Tabs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Tabs</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-
     <div class="tabs">
-      <div class="tab-links">
-        <button class="tab-link active" onclick="openTab(event, 'Tab1')">First Tab</button>
-        <button class="tab-link" onclick="openTab(event, 'Tab2')">Second Tab</button>
-        <button class="tab-link" onclick="openTab(event, 'Tab3')">Third Tab</button>
-        <button class="tab-link" onclick="openTab(event, 'Tab4')">Fourth Tab</button>
-      </div>
+        <div class="tab-links">
+            <button class="tab-link active" onclick="openTab(event, 'Tab1')">
+                <i class="fas fa-info-circle"></i> About Me
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'Tab2')">
+                <i class="fas fa-project-diagram"></i> Projects
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'Tab3')">
+                <i class="fas fa-envelope"></i> Contact
+            </button>
+            <button class="tab-link" onclick="openTab(event, 'Tab4')">
+                <i class="fas fa-star"></i> Achievements
+            </button>
+        </div>
 
-      <div class="tab-content" id="Tab1">
-        <h2>Content for Tab 1</h2>
-        <p>This is the content of Tab 1. It is shown by default.</p>
-        <img src="https://via.placeholder.com/300" alt="Placeholder Image">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, suscipit?
-        </p>
-      </div>
-      <div class="tab-content" id="Tab2" style="display: none;">
-        <h2>Content for Tab 2</h2>
-        <p>This is the content of Tab 2.</p>
-      </div>
-      <div class="tab-content" id="Tab3" style="display: none;">
-        <h2>Content for Tab 3</h2>
-        <p>This is the content of Tab 3.</p>
-      </div>
-      <div class="tab-content" id="Tab4" style="display: none;">
-        <h2>Content for Tab 4</h2>
-        <p>This is the content of Tab 4.</p>
-      </div>
+        <div class="tab-content" id="Tab1">
+            <h2>About Me</h2>
+            <p>Hello! I'm building impressive web applications and working on cool projects!</p>
+        </div>
+        <div class="tab-content" id="Tab2" style="display: none;">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I've worked on:</p>
+            <ul>
+                <li>Project 1: A web app for productivity.</li>
+                <li>Project 2: An interactive game using JavaScript.</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="Tab3" style="display: none;">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me at my <a href="mailto:carlnonacido@gmail.com">email</a>.</p>
+        </div>
+        <div class="tab-content" id="Tab4" style="display: none;">
+            <h2>Achievements</h2>
+            <p>Here are some highlights of my career:</p>
+            <ul>
+                <li>Top 10 finalist in Hackathon 2023.</li>
+                <li>Contributed to an open-source project with 5k+ stars on GitHub.</li>
+            </ul>
+        </div>
     </div>
-
-    <script src="script.js"></script>
-  </body>
-</html>
     <script src="script.js"></script>
 </body>
 </html>
