@@ -14,9 +14,7 @@ body {
 
 .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 div .nav {
@@ -28,17 +26,40 @@ div .nav {
   
 
 
-#tooltip {
+.tooltip {
     position: relative;
     cursor: pointer;
-    border-bottom: 2px dotted;
-    padding: 7px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bold;
     font-family: sans-serif;
+    padding: 5px;
+    text-align: center;
 }
 
-.tooltip-text {
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltip-text::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-top-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    visibility: hidden;
+    z-index: 10;
+}
+
+#home, #project, #contact {
     position: absolute;
     left: 50%;
     top: 0;
@@ -50,42 +71,55 @@ div .nav {
     border-radius: 7px;
     opacity: 0;
     transition: opacity 0.5s ease;
-    visibility: hidden;
 }
 
-
-#home, #project, #contact {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: transLateX(-50%);
-    background-color: #000;
-    color: #fff;
-    white-space: nowrap;
-    padding: 10px 15px;
-    border-radius: 7px;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-#home::before, #project::before, #contact::before {
+#home::before {
     content: "";
     position: absolute;
     left: 50%;
     top: 100%;
-    transform: translateX(-50%); /* Fix: Align the arrow to the center */
-    border: 10px solid transparent;
-    border-top-color: #000; /* Create a triangle for the arrow */
+    transform: translateX(-50px);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
     visibility: hidden;
 }
 
-.tooltip:hover .tooltip-text {
-    top: -130%; /* Moves the tooltip upwards */
+#project::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50px);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+    visibility: hidden;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50px);
+    border: 15px solid;
+    border-color: #000 #0000 #0000 #0000;
+    visibility: hidden;
+}
+
+.tooltip:hover #home {
+    top: -130%;
     visibility: visible;
     opacity: 1;
 }
 
-.nav span:hover {
-    color: #555; /* Highlight text on hover */
-    cursor: pointer;
+.tooltip:hover #project {
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip:hover #contact {
+    top: -130%;
+    visibility: visible;
+    opacity: 1;
 }
