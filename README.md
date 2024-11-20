@@ -12,7 +12,8 @@ This repository contains front-end projects built following the roadmap.sh front
 [Datepicker UI](https://roadmap.sh/projects/datepicker-ui),
 [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui),
 [Image Grid Layout](https://roadmap.sh/projects/image-grid),
-[Tooltip UI](https://roadmap.sh/projects/tooltip-ui)
+[Tooltip UI](https://roadmap.sh/projects/tooltip-ui),
+[Tabs](https://roadmap.sh/projects/simple-tabs),
 
 <p align="left">
 <a href="/01-single-page-cv/">
@@ -42,7 +43,10 @@ This repository contains front-end projects built following the roadmap.sh front
   </a>
 </p>
 <p align="left">
-<a href="/09-tooltip-ui/">
-    <img src="resources/tooltip.png" alt="Tooltip UI" width="300" />
-</a>
+  <a href="/09-tooltip-ui/">
+      <img src="resources/tooltip.png" alt="Tooltip UI" width="300" />
+  </a>
+  <a href="/10-tabs/">
+      <img src="resources/tabs.png" alt="Tabs" width="300">
+  </a>
 </p>
