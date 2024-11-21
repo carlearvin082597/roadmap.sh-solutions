@@ -53,6 +53,6 @@ This repository contains front-end projects built following the roadmap.sh front
 </p>
 <p align="left">
   <a href="/11-cookie-consent/">
-      <img src="resources/tabs.png" alt="Cookie Consent" width="300">
+      <img src="resources/cookies.png" alt="Cookie Consent" width="300">
   </a>
 </p>
