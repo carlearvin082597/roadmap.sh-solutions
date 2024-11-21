@@ -14,6 +14,7 @@ This repository contains front-end projects built following the roadmap.sh front
 [Image Grid Layout](https://roadmap.sh/projects/image-grid),
 [Tooltip UI](https://roadmap.sh/projects/tooltip-ui),
 [Tabs](https://roadmap.sh/projects/simple-tabs),
+[Cookie Consent](https://roadmap.sh/projects/cookie-consent)
 
 <p align="left">
 <a href="/01-single-page-cv/">
@@ -48,5 +49,10 @@ This repository contains front-end projects built following the roadmap.sh front
   </a>
   <a href="/10-tabs/">
       <img src="resources/tabs.png" alt="Tabs" width="300">
+  </a>
+</p>
+<p align="left">
+  <a href="/11-cookie-consent/">
+      <img src="resources/tabs.png" alt="Cookie Consent" width="300">
   </a>
 </p>
