@@ -15,7 +15,8 @@ This repository contains front-end projects built following the roadmap.sh front
 [Tooltip UI](https://roadmap.sh/projects/tooltip-ui),
 [Tabs](https://roadmap.sh/projects/simple-tabs),
 [Cookie Consent](https://roadmap.sh/projects/cookie-consent),
-[Restricted Textarea](https://roadmap.sh/projects/restricted-textarea)
+[Restricted Textarea](https://roadmap.sh/projects/restricted-textarea),
+[Accordion](https://roadmap.sh/projects/accordion)
 
 <p align="left">
 <a href="/01-single-page-cv/">
@@ -59,4 +60,9 @@ This repository contains front-end projects built following the roadmap.sh front
   <a href="/12-restricted-textarea/">
       <img src="resources/restricted-textarea.png" alt="Restricted Textarea" width="300">
   </a>
+</p>
+<p align="left">
+<a href="/13-accordion/">
+      <img src="resources/accordion.png" alt="Accordion" width="300">
+</a>
 </p>
