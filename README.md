@@ -16,7 +16,8 @@ This repository contains front-end projects built following the roadmap.sh front
 [Tabs](https://roadmap.sh/projects/simple-tabs),
 [Cookie Consent](https://roadmap.sh/projects/cookie-consent),
 [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea),
-[Accordion](https://roadmap.sh/projects/accordion)
+[Accordion](https://roadmap.sh/projects/accordion),
+[Age Calculator](https://roadmap.sh/projects/age-calculator),
 
 <p align="left">
 <a href="/01-single-page-cv/">
@@ -62,7 +63,10 @@ This repository contains front-end projects built following the roadmap.sh front
   </a>
 </p>
 <p align="left">
-<a href="/13-accordion/">
-      <img src="resources/accordion.png" alt="Accordion" width="300">
-</a>
+  <a href="/13-accordion/">
+        <img src="resources/accordion.png" alt="Accordion" width="300">
+  </a>
+  <a href="/14-age-calculator/">
+        <img src="resources/age-calculator.png" alt="Age Calculator" width="300">
+  </a>
 </p>
