@@ -1,37 +1,43 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const { DateTime } = luxon;
+let userInput = document.getElementById("date");
+userInput.max = new Date().toISOString().split("T")[0]; 
+let result = document.getElementById("result");
 
-    // Initialize Datepicker
-    const datepicker = document.querySelector('#datepicker');
-    flatpickr(datepicker, {
-        dateFormat: "m/d/Y",
-    });
+function calculateAge() {
+    let birthDate = new Date(userInput.value);
 
-    const form = document.querySelector('#age-form');
-    const result = document.querySelector('#result');
+    let d1 = birthDate.getDate();
+    let m1 = birthDate.getMonth() + 1;
+    let y1 = birthDate.getFullYear();
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const birthdate = datepicker.value;
+    let today = new Date();
 
-        if (!birthdate) {
-            result.textContent = "Please select a valid birthdate.";
-            return;
-        }
+    let d2 = today.getDate();
+    let m2 = today.getMonth() + 1;
+    let y2 = today.getFullYear();
 
-        const birthDateObj = DateTime.fromFormat(birthdate, "M/d/yyyy");
-        if (!birthDateObj.isValid) {
-            result.textContent = "Invalid date format.";
-            return;
-        }
+    let d3, m3, y3;
 
-        const now = DateTime.now();
-        const diff = now.diff(birthDateObj, ['years', 'months', 'days']).toObject();
+    y3 = y2 - y1;
 
-        result.innerHTML = `
-            You are <strong>${Math.floor(diff.years)} years</strong>, 
-            <strong>${Math.floor(diff.months)} months</strong>, and 
-            <strong>${Math.floor(diff.days)} days</strong> old.
-        `;
-    });
-});
+    if(m2 >= m1) {
+        m3 = m2 - m1;
+    }else {
+        y3--;
+        m3 = 12 + m2 - m1;
+    }
+
+    if(d2 >= d1) {
+        d3 = d2 - d1;
+    }else {
+        m3--;
+        d3 = getDaysInMonth(y1, m1) + d2 - d1;
+    }
+    if(m3 < 0) {
+        m3 = 11;
+        y3--;
+    }
+    result.innerHTML = `You are ${y3} years, ${m3} months, and ${d3} days old`;
+}
+function getDaysInMonth(year, month) {
+    return new Date(year, month, 0).getDate();
+}
